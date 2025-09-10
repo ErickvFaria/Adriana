@@ -9,6 +9,7 @@ public class Parque {
         this.tipoDeTerreno = tipoDeTerreno;
     }
 
+
     public void receberPessoa(Pessoa pessoa) {
         System.out.println("O parque " + nome + " recebeu " + pessoa.getNome());
     }

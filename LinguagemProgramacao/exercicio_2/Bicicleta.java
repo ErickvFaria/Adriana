@@ -9,6 +9,7 @@ public class Bicicleta {
         this.qntDeRodas = qntDeRodas;
     }
 
+
     public void pedalar() {
         System.out.println("A bicicleta de cor " + cor + " está sendo pedalada!");
     }

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Adriana.iml" filepath="$PROJECT_DIR$/Adriana.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LinguagemProgramacao/LinguagemProgramacao.iml" filepath="$PROJECT_DIR$/LinguagemProgramacao/LinguagemProgramacao.iml" />
+    </modules>
+  </component>
+</project>
