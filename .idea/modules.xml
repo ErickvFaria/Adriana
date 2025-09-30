@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Adriana.iml" filepath="$PROJECT_DIR$/Adriana.iml" />
-      <module fileurl="file://$PROJECT_DIR$/LinguagemProgramacao/LinguagemProgramacao.iml" filepath="$PROJECT_DIR$/LinguagemProgramacao/LinguagemProgramacao.iml" />
-      <module fileurl="file://$PROJECT_DIR$/LinguagemProgramacao/exercicio_4/exercicio_4.iml" filepath="$PROJECT_DIR$/LinguagemProgramacao/exercicio_4/exercicio_4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Adriana.iml" filepath="$PROJECT_DIR$/.idea/Adriana.iml" />
     </modules>
   </component>
 </project>

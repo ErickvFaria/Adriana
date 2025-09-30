@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<VBox spacing="20" alignment="CENTER" style="-fx-background-color: #f0f8ff; -fx-padding: 20;"
+      xmlns="http://javafx.com/javafx/24.0.1"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="LinguagemProgramacao.exercicio_7.controllers.CalculoMediaController">
+
+    <Label text="📊 Calculadora de Média Final 📊" style="-fx-font-size: 26; -fx-font-weight: bold;" />
+
+    <GridPane hgap="15" vgap="12">
+        <columnConstraints>
+            <ColumnConstraints halignment="RIGHT"/>
+            <ColumnConstraints halignment="LEFT"/>
+        </columnConstraints>
+
+        <Label text="Prova 1 (P1):" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+        <TextField fx:id="txtP1" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+        <Label text="Entrega 1 (E1):" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+        <TextField fx:id="txtE1" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+        <Label text="Entrega 2 (E2):" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+        <TextField fx:id="txtE2" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+        <Label text="Atividade Extra (X):" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+        <TextField fx:id="txtX" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+
+        <Label text="Prova Substitutiva (SUB):" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+        <TextField fx:id="txtSUB" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+
+        <Label text="Projeto Integrador (AP):" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+        <TextField fx:id="txtAP" GridPane.rowIndex="5" GridPane.columnIndex="1"/>
+    </GridPane>
+
+    <Button fx:id="btnCalcular" text="Calcular Média" style="-fx-font-size: 16; -fx-padding: 8 16;" />
+
+    <Label fx:id="lblResultado" text="Média final:" style="-fx-font-size: 20; -fx-text-fill: #2e8b57;" />
+
+</VBox>

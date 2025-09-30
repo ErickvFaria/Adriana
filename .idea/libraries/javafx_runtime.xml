@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="javafx-runtime">
+    <CLASSES />
+    <JAVADOC />
+    <SOURCES>
+      <root url="file:///Library/Java/javafx-sdk-21.0.8/src/javafx.base" />
+      <root url="file:///Library/Java/javafx-sdk-21.0.8/src/javafx.controls" />
+      <root url="file:///Library/Java/javafx-sdk-21.0.8/src/javafx.fxml" />
+      <root url="file:///Library/Java/javafx-sdk-21.0.8/src/javafx.graphics" />
+      <root url="file:///Library/Java/javafx-sdk-21.0.8/src/javafx.media" />
+      <root url="file:///Library/Java/javafx-sdk-21.0.8/src/javafx.swing" />
+      <root url="file:///Library/Java/javafx-sdk-21.0.8/src/javafx.web" />
+      <root url="file:///Library/Java/javafx-sdk-21.0.8" />
+    </SOURCES>
+    <jarDirectory url="file:///Library/Java/javafx-sdk-21.0.8" recursive="false" type="SOURCES" />
+  </library>
+</component>

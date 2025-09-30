@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<TabPane prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE"
+         xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1"
+         fx:controller="LinguagemProgramacao.exercicio_4.controllers.Ex4Controller">
+
+    <tabs>
+        <!-- Tab Carro -->
+        <Tab text="Carro">
+            <content>
+                <AnchorPane prefHeight="400.0" prefWidth="600.0">
+                    <children>
+                        <Label layoutX="250.0" layoutY="20.0" text="Carro">
+                            <font>
+                                <Font size="36.0" />
+                            </font>
+                        </Label>
+
+                        <Label layoutX="100.0" layoutY="100.0" text="Modelo"/>
+                        <TextField fx:id="txtModeloCarro" layoutX="200.0" layoutY="95.0"/>
+
+                        <Label layoutX="100.0" layoutY="150.0" text="Velocidade"/>
+                        <TextField fx:id="txtVelocidadeCarro" layoutX="200.0" layoutY="145.0"/>
+
+                        <Label layoutX="100.0" layoutY="200.0" text="Cor"/>
+                        <TextField fx:id="txtCorCarro" layoutX="200.0" layoutY="195.0"/>
+
+                        <Button fx:id="btnSalvarCarro" layoutX="250.0" layoutY="250.0" text="Salvar"/>
+                    </children>
+                </AnchorPane>
+            </content>
+        </Tab>
+
+        <!-- Tab Foguete -->
+        <Tab text="Foguete">
+            <content>
+                <AnchorPane prefHeight="400.0" prefWidth="600.0">
+                    <children>
+                        <Label layoutX="250.0" layoutY="20.0" text="Foguete">
+                            <font>
+                                <Font size="36.0" />
+                            </font>
+                        </Label>
+
+                        <Label layoutX="100.0" layoutY="100.0" text="Nome"/>
+                        <TextField fx:id="txtNomeFoguete" layoutX="200.0" layoutY="95.0"/>
+
+                        <Label layoutX="100.0" layoutY="150.0" text="Combustível"/>
+                        <TextField fx:id="txtCombustivelFoguete" layoutX="200.0" layoutY="145.0"/>
+
+                        <Label layoutX="100.0" layoutY="200.0" text="Altitude"/>
+                        <TextField fx:id="txtAltitudeFoguete" layoutX="200.0" layoutY="195.0"/>
+
+                        <Button fx:id="btnSalvarFoguete" layoutX="250.0" layoutY="250.0" text="Salvar"/>
+                    </children>
+                </AnchorPane>
+            </content>
+        </Tab>
+
+        <!-- Tab Personagem -->
+        <Tab text="Personagem">
+            <content>
+                <AnchorPane prefHeight="400.0" prefWidth="600.0">
+                    <children>
+                        <Label layoutX="220.0" layoutY="20.0" text="Personagem">
+                            <font>
+                                <Font size="36.0"/>
+                            </font>
+                        </Label>
+
+                        <Label layoutX="100.0" layoutY="100.0" text="Nome"/>
+                        <TextField fx:id="txtNomePersonagem" layoutX="200.0" layoutY="95.0"/>
+
+                        <Label layoutX="100.0" layoutY="150.0" text="Humor"/>
+                        <TextField fx:id="txtHumorPersonagem" layoutX="200.0" layoutY="145.0"/>
+
+                        <Label layoutX="100.0" layoutY="200.0" text="Energia"/>
+                        <TextField fx:id="txtEnergiaPersonagem" layoutX="200.0" layoutY="195.0"/>
+
+                        <Button fx:id="btnSalvarPersonagem" layoutX="250.0" layoutY="250.0" text="Salvar"/>
+                    </children>
+                </AnchorPane>
+            </content>
+        </Tab>
+    </tabs>
+</TabPane>

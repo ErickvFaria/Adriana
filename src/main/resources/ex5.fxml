@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="LinguagemProgramacao.exercicio_5.controllers.Ex5Controller"
+            prefWidth="600" prefHeight="400">
+
+    <children>
+        <VBox spacing="10" AnchorPane.topAnchor="10" AnchorPane.leftAnchor="10" AnchorPane.rightAnchor="10">
+            <Label text="Cadastro Humano" style="-fx-font-weight: bold; -fx-font-size: 14"/>
+            <GridPane hgap="10" vgap="5">
+                <columnConstraints>
+                    <ColumnConstraints halignment="RIGHT"/>
+                    <ColumnConstraints hgrow="ALWAYS"/>
+                </columnConstraints>
+
+                <Label text="Nome:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+                <TextField fx:id="txtNomeHumano" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+                <Label text="Idade:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+                <TextField fx:id="txtIdadeHumano" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+                <Label text="Roupa:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+                <TextField fx:id="txtRoupaHumano" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+                <Label text="Ano:" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+                <TextField fx:id="txtAnoHumano" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+
+                <Label text="Década:" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+                <TextField fx:id="txtDecadaHumano" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+
+                <Label text="Evento:" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+                <TextField fx:id="txtEventoHumano" GridPane.rowIndex="5" GridPane.columnIndex="1"/>
+            </GridPane>
+            <Button fx:id="btnSalvarHumano" text="Salvar Humano"/>
+
+            <Separator/>
+
+            <Label text="Cadastro Ovelha" style="-fx-font-weight: bold; -fx-font-size: 14"/>
+            <GridPane hgap="10" vgap="5">
+                <columnConstraints>
+                    <ColumnConstraints halignment="RIGHT"/>
+                    <ColumnConstraints hgrow="ALWAYS"/>
+                </columnConstraints>
+
+                <Label text="Nome:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+                <TextField fx:id="txtNomeOvelha" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+                <Label text="Idade:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+                <TextField fx:id="txtIdadeOvelha" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+                <Label text="Quantidade de Lã (kg):" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+                <TextField fx:id="txtLanaOvelha" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+            </GridPane>
+            <Button fx:id="btnSalvarOvelha" text="Salvar Ovelha"/>
+            <Button fx:id="btnAssociarOvelha" text="Associar última Ovelha ao último Humano"/>
+        </VBox>
+    </children>
+</AnchorPane>
