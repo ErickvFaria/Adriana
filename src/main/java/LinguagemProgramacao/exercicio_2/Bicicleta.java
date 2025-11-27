@@ -1,33 +1,29 @@
 package LinguagemProgramacao.exercicio_2;
 
-import java.io.File;
-import ClasseEscritaLeitura.CSVEscritaLeitura;
-
-
 public class Bicicleta {
-    private String cor;
-    private int tamanho;
-    private int qntDeRodas;
+    private int id;
+    private String modelo;
+    private int marchas;
 
-    public Bicicleta(String cor, int tamanho, int qntDeRodas) {
-        this.cor = cor;
-        this.tamanho = tamanho;
-        this.qntDeRodas = qntDeRodas;
+    public Bicicleta() {}
+
+    public Bicicleta(int id, String modelo, int marchas) {
+        this.id = id;
+        this.modelo = modelo;
+        this.marchas = marchas;
     }
 
-    public void salvar() {
-        String caminho = "bicicletas.csv";
-        File arquivo = new File(caminho);
-        String[] cabecalho = arquivo.exists() ? null : new String[]{"Cor", "Tamanho", "Rodas"};
-        String[][] dados = {{cor, String.valueOf(tamanho), String.valueOf(qntDeRodas)}};
-        new CSVEscritaLeitura().escreverCSV(caminho, cabecalho, dados);
+    public Bicicleta(String modelo, int marchas) {
+        this.modelo = modelo;
+        this.marchas = marchas;
     }
 
-    // getters e setters
-    public String getCor() { return cor; }
-    public void setCor(String cor) { this.cor = cor; }
-    public int getTamanho() { return tamanho; }
-    public void setTamanho(int tamanho) { this.tamanho = tamanho; }
-    public int getQntDeRodas() { return qntDeRodas; }
-    public void setQntDeRodas(int qntDeRodas) { this.qntDeRodas = qntDeRodas; }
+    public int getId() { return id; }
+    public void setId(int id) { this.id = id; }
+
+    public String getModelo() { return modelo; }
+    public void setModelo(String modelo) { this.modelo = modelo; }
+
+    public int getMarchas() { return marchas; }
+    public void setMarchas(int marchas) { this.marchas = marchas; }
 }

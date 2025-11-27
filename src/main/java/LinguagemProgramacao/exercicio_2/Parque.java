@@ -1,32 +1,29 @@
 package LinguagemProgramacao.exercicio_2;
 
-import java.io.File;
-import ClasseEscritaLeitura.CSVEscritaLeitura;
-
 public class Parque {
-    private String localizacao;
+    private int id;
     private String nome;
-    private String tipoDeTerreno;
+    private String cidade;
 
-    public Parque(String localizacao, String nome, String tipoDeTerreno) {
-        this.localizacao = localizacao;
+    public Parque() {}
+
+    public Parque(int id, String nome, String cidade) {
+        this.id = id;
         this.nome = nome;
-        this.tipoDeTerreno = tipoDeTerreno;
+        this.cidade = cidade;
     }
 
-    public void salvar() {
-        String caminho = "parques.csv";
-        File arquivo = new File(caminho);
-        String[] cabecalho = arquivo.exists() ? null : new String[]{"Localizacao", "Nome", "Tipo"};
-        String[][] dados = {{localizacao, nome, tipoDeTerreno}};
-        new CSVEscritaLeitura().escreverCSV(caminho, cabecalho, dados);
+    public Parque(String nome, String cidade) {
+        this.nome = nome;
+        this.cidade = cidade;
     }
 
-    // getters e setters
-    public String getLocalizacao() { return localizacao; }
-    public void setLocalizacao(String localizacao) { this.localizacao = localizacao; }
+    public int getId() { return id; }
+    public void setId(int id) { this.id = id; }
+
     public String getNome() { return nome; }
     public void setNome(String nome) { this.nome = nome; }
-    public String getTipoDeTerreno() { return tipoDeTerreno; }
-    public void setTipoDeTerreno(String tipoDeTerreno) { this.tipoDeTerreno = tipoDeTerreno; }
+
+    public String getCidade() { return cidade; }
+    public void setCidade(String cidade) { this.cidade = cidade; }
 }

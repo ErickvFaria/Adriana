@@ -12,5 +12,15 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="JavafX" level="project" />
     <orderEntry type="library" exported="" scope="RUNTIME" name="javafx-runtime" level="project" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/mysql-connector-j-8.4.0.ja" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/mysql-connector-j-8.4.0.ja" recursive="false" />
+      </library>
+    </orderEntry>
   </component>
 </module>

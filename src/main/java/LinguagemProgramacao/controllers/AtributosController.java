@@ -56,7 +56,7 @@ public class AtributosController {
                 limparCamposArtista();
 
             } catch (NumberFormatException ex) {
-                alertErro("Idade inválida!");
+                alertErro("info inválida!");
             }
         });
 

@@ -1,95 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.Tab?>
-<?import javafx.scene.control.TabPane?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.text.Font?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
 
-<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
-         prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE"
-         xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1"
-         fx:controller="LinguagemProgramacao.exercicio_2.controllers.Ex2Controller">
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="LinguagemProgramacao.exercicio_2.MainController">
 
-    <tabs>
-        <!-- Tab Bicicleta -->
-        <Tab text="Bicicleta">
-            <content>
-                <AnchorPane prefHeight="400.0" prefWidth="600.0">
-                    <children>
-                        <Label layoutX="250.0" layoutY="20.0" text="Bicicleta">
-                            <font>
-                                <Font size="36.0" />
-                            </font>
-                        </Label>
+    <top>
+        <VBox spacing="10">
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10" />
+            </padding>
 
-                        <Label layoutX="100.0" layoutY="100.0" text="Cor" />
-                        <TextField fx:id="txtCorBike" layoutX="200.0" layoutY="95.0" />
+            <Label text="Cadastro de Pessoas" />
 
-                        <Label layoutX="100.0" layoutY="150.0" text="Tamanho" />
-                        <TextField fx:id="txtTamanhoBike" layoutX="200.0" layoutY="145.0" />
+            <HBox spacing="10">
+                <TextField fx:id="campoNome" promptText="Nome" />
+                <TextField fx:id="campoIdade" promptText="Idade" />
+                <Button text="Salvar Pessoa" onAction="#salvarPessoa"/>
+            </HBox>
 
-                        <Label layoutX="100.0" layoutY="200.0" text="Rodas(QNTD)" />
-                        <TextField fx:id="txtRodasBike" layoutX="200.0" layoutY="195.0" />
+            <Label text="Pessoas Cadastradas:"/>
+            <TableView fx:id="tabelaPessoas" prefHeight="200">
+                <columns>
+                    <TableColumn text="ID" fx:id="colId"/>
+                    <TableColumn text="Nome" fx:id="colNome"/>
+                    <TableColumn text="Idade" fx:id="colIdade"/>
+                </columns>
+            </TableView>
 
-                        <Button fx:id="btnSalvarBike" layoutX="250.0" layoutY="250.0" text="Salvar" />
-                    </children>
-                </AnchorPane>
-            </content>
-        </Tab>
+        </VBox>
+    </top>
 
-        <!-- Tab Parque -->
-        <Tab text="Parque">
-            <content>
-                <AnchorPane prefHeight="400.0" prefWidth="600.0">
-                    <children>
-                        <Label layoutX="250.0" layoutY="20.0" text="Parque">
-                            <font>
-                                <Font size="36.0" />
-                            </font>
-                        </Label>
-
-                        <Label layoutX="100.0" layoutY="100.0" text="Localização" />
-                        <TextField fx:id="txtLocalizacaoParque" layoutX="200.0" layoutY="95.0" />
-
-                        <Label layoutX="100.0" layoutY="150.0" text="Nome" />
-                        <TextField fx:id="txtNomeParque" layoutX="200.0" layoutY="145.0" />
-
-                        <Label layoutX="100.0" layoutY="200.0" text="Tipo de Terreno" />
-                        <TextField fx:id="txtTerrenoParque" layoutX="200.0" layoutY="195.0" />
-
-                        <Button fx:id="btnSalvarParque" layoutX="250.0" layoutY="250.0" text="Salvar" />
-                    </children>
-                </AnchorPane>
-            </content>
-        </Tab>
-
-        <!-- Tab Pessoa -->
-        <Tab text="Pessoa">
-            <content>
-                <AnchorPane prefHeight="400.0" prefWidth="600.0">
-                    <children>
-                        <Label layoutX="250.0" layoutY="20.0" text="Pessoa">
-                            <font>
-                                <Font size="36.0" />
-                            </font>
-                        </Label>
-
-                        <Label layoutX="100.0" layoutY="100.0" text="Nome" />
-                        <TextField fx:id="txtNomePessoa" layoutX="200.0" layoutY="95.0" />
-
-                        <Label layoutX="100.0" layoutY="150.0" text="Idade" />
-                        <TextField fx:id="txtIdadePessoa" layoutX="200.0" layoutY="145.0" />
-
-                        <Label layoutX="100.0" layoutY="200.0" text="Altura" />
-                        <TextField fx:id="txtAlturaPessoa" layoutX="200.0" layoutY="195.0" />
-
-                        <Button fx:id="btnSalvarPessoa" layoutX="250.0" layoutY="250.0" text="Salvar" />
-                    </children>
-                </AnchorPane>
-            </content>
-        </Tab>
-    </tabs>
-</TabPane>
+</BorderPane>
