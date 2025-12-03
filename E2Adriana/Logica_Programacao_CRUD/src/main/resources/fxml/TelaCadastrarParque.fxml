@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="AncorPaneParque" prefHeight="541.0" prefWidth="701.0" styleClass="painel" stylesheets="@../css/TelaCadastrar.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CRUD.controller.TelaCadastrarParqueController">
+
+    <ScrollPane fitToHeight="true" fitToWidth="true" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0">
+        <content>
+            <VBox alignment="CENTER" prefHeight="580" prefWidth="780" spacing="16">
+                <padding>
+                    <Insets bottom="20" left="20" right="20" top="20" />
+                </padding>
+
+                <!-- Título centralizado -->
+                <HBox alignment="CENTER" maxWidth="Infinity">
+                    <Label styleClass="titulo" text="Cadastro de Parque">
+                        <font>
+                            <Font name="Berlin Sans FB" size="48.0" />
+                        </font>
+                    </Label>
+                </HBox>
+
+                <!-- Formulário + Imagem -->
+                <GridPane hgap="16" vgap="12">
+                    <columnConstraints>
+                        <ColumnConstraints percentWidth="65.0" />
+                        <ColumnConstraints percentWidth="35.0" />
+                    </columnConstraints>
+
+                    <!-- Coluna esquerda: formulário -->
+                    <StackPane alignment="CENTER" GridPane.columnIndex="0">
+                        <VBox alignment="CENTER" spacing="10">
+                            <GridPane hgap="8" vgap="8">
+                                <columnConstraints>
+                                    <ColumnConstraints percentWidth="30" />
+                                    <ColumnConstraints percentWidth="70" />
+                                </columnConstraints>
+
+                                <Label styleClass="label-campos" text="Nome:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                                <TextField fx:id="txf_nome" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+                                <Label styleClass="label-campos" text="Localização:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                                <TextField fx:id="txf_localizacao" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+                                <Label styleClass="label-campos" text="Tipo do Terreno:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                                <ComboBox fx:id="cbox_tipoTerreno" prefHeight="12.0" prefWidth="288.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+                                <rowConstraints>
+                                    <RowConstraints minHeight="30" />
+                                    <RowConstraints minHeight="30" />
+                                    <RowConstraints minHeight="30" />
+                                </rowConstraints>
+                            </GridPane>
+
+                            <HBox alignment="CENTER" maxWidth="Infinity" spacing="8">
+                                <Button fx:id="btnSalvar" onAction="#handleSalvar" prefHeight="38.0" prefWidth="98.0" style="-fx-font-weight:bold;" text="Salvar" />
+                                <Button fx:id="btnCancelar" onAction="#handleCancelar" styleClass="button-secondary" text="Cancelar" />
+                            </HBox>
+                        </VBox>
+                    </StackPane>
+
+                    <!-- Coluna direita: imagem -->
+                    <StackPane alignment="CENTER" GridPane.columnIndex="1">
+                        <VBox alignment="CENTER" spacing="12">
+                            <StackPane styleClass="profile-frame">
+                                <ImageView fx:id="imgFoto" fitHeight="200.0" fitWidth="200.0" preserveRatio="true" styleClass="profile-Image">
+                                    <Image url="@../images/Usuario.png" />
+                                </ImageView>
+                            </StackPane>
+                            <Button fx:id="btnSelecionarFoto" onAction="#handleSelecionarFoto" text="Selecionar Foto..." />
+                        </VBox>
+                    </StackPane>
+
+                    <rowConstraints>
+                        <RowConstraints />
+                    </rowConstraints>
+                </GridPane>
+            </VBox>
+        </content>
+    </ScrollPane>
+</AnchorPane>

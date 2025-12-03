@@ -1,0 +1,29 @@
+CREATE DATABASE IF NOT EXISTS exercicio_CRUD
+  CHARACTER SET utf8mb4
+  COLLATE utf8mb4_unicode_ci;
+
+USE Exercicio_CRUD;
+
+CREATE TABLE IF NOT EXISTS bicicleta (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    cor VARCHAR(100) NOT NULL,
+    tamanho VARCHAR(10) NOT NULL,
+    preco DECIMAL(10,2) NOT NULL,
+    foto VARCHAR(250)
+    );
+
+CREATE TABLE IF NOT EXISTS pessoa (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    idade INT(10) NOT NULL,
+    altura DECIMAL(4,2) NOT NULL,
+    foto VARCHAR(250)
+    );
+
+CREATE TABLE IF NOT EXISTS parque (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    localizacao VARCHAR(100) NOT NULL,
+    tipo_terreno VARCHAR(100) NOT NULL,
+    foto VARCHAR(250)
+    );

@@ -1,0 +1,152 @@
+/* ============================================
+   TEMA GLOBAL DA TELA DE LISTA
+   ============================================ */
+
+.border-pane {
+    -fx-background-color: linear-gradient(to right, #E0E7FF, #F0F4FF); /* tons de azul claro */
+}
+
+/* ============================================
+   TÍTULO PRINCIPAL
+   ============================================ */
+
+.label-title {
+    -fx-text-fill: #3B0D6F; /* roxo escuro do projeto */
+    -fx-font-weight: bold;
+    -fx-font-size: 24px;
+}
+
+/* ============================================
+   LABELS E CAMPOS DE PESQUISA
+   ============================================ */
+
+.search-field {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 6;
+    -fx-border-radius: 6;
+    -fx-border-color: #3B0D6F; /* roxo do projeto */
+    -fx-border-width: 1.5;
+    -fx-padding: 6;
+    -fx-font-size: 14px;
+}
+
+.search-field:focused {
+    -fx-border-color: #5C33CC; /* azul roxo mais claro */
+    -fx-effect: dropshadow(gaussian, rgba(59,13,111,0.25), 8, 0, 0, 1);
+}
+
+/* ============================================
+   BOTÕES
+   ============================================ */
+
+.button-primary {
+    -fx-background-color: linear-gradient(to bottom, #3B0D6F, #5C33CC);
+    -fx-text-fill: white;
+    -fx-padding: 8 20;
+    -fx-background-radius: 8;
+    -fx-border-color: #000000;
+    -fx-border-width: 2;
+    -fx-border-radius: 8;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 8, 0.3, 0, 2);
+}
+
+.button-primary:hover {
+    -fx-background-color: linear-gradient(to bottom, #5C33CC, #3B0D6F);
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.4), 10, 0.3, 0, 3);
+}
+
+.button-primary:pressed {
+    -fx-background-color: #3B0D6F;
+    -fx-translate-y: 1px;
+}
+
+/* ============================================
+   SCROLLPANE
+   ============================================ */
+
+.scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: #3B0D6F;
+    -fx-background-radius: 4;
+}
+
+.scroll-bar .thumb:hover {
+    -fx-background-color: #5C33CC;
+}
+
+/* ============================================
+   CARDS DE PORTFÓLIO
+   ============================================ */
+
+.card-item {
+    -fx-background-color: #F8F9FF;
+    -fx-background-radius: 10;
+    -fx-border-color: #3B0D6F;
+    -fx-border-width: 2;
+    -fx-border-radius: 10;
+    -fx-padding: 12;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 6, 0.2, 0, 1);
+    -fx-cursor: hand;
+}
+
+.card-item:hover {
+    -fx-background-color: #E0E7FF;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 8, 0.2, 0, 2);
+}
+
+/* ============================================
+   TEXTO DENTRO DOS CARDS
+   ============================================ */
+
+.card-item .title {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #3B0D6F;
+}
+
+.card-item Label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #1A1A1A;
+}
+
+/* ============================================
+   BOTÃO OLHO (VISUALIZAR)
+   ============================================ */
+
+.eye-btn {
+    -fx-background-color: linear-gradient(to bottom, #3B0D6F, #5C33CC);
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-background-radius: 6;
+    -fx-border-radius: 6;
+    -fx-padding: 6 12;
+    -fx-border-color: #000000;
+    -fx-border-width: 1.5;
+    -fx-cursor: hand;
+}
+
+.eye-btn:hover {
+    -fx-background-color: linear-gradient(to bottom, #5C33CC, #3B0D6F);
+}
+
+.eye-btn:pressed {
+    -fx-background-color: #3B0D6F;
+    -fx-translate-y: 1px;
+}
+
+.title-box {
+    -fx-background-color: #F8F9FF;
+    -fx-background-radius: 6;
+    -fx-border-radius: 6;
+    -fx-border-color: #3B0D6F;
+    -fx-border-width: 1.5;
+    -fx-padding: 10;
+}

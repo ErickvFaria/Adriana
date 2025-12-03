@@ -1,0 +1,70 @@
+/* ================================
+   FUNDO DA TELA
+================================ */
+.root, .anchor-pane, .stack-pane {
+    -fx-background-color: #f3e8ff; /* fundo roxo pastel suave */
+}
+
+/* ================================
+   LABEL DE TÍTULO
+================================ */
+.label {
+    -fx-text-fill: #7e22ce; /* roxo forte */
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+}
+
+/* ================================
+   BOTÕES — USANDO SOMENTE
+   O ESTILO ANTIGO (SEU MODELO 1)
+================================ */
+.button {
+    -fx-background-color: linear-gradient(to bottom, #7e22ce, #3b0764);
+    -fx-text-fill: white;
+    -fx-padding: 8 20;
+    -fx-background-radius: 8;
+    -fx-border-color: #06b6d4;
+    -fx-border-width: 2;
+    -fx-border-radius: 8;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(6, 182, 212, 0.4), 8, 0.3, 0, 2);
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(to bottom, #9d4edd, #4c0a87);
+}
+
+.button:pressed {
+    -fx-background-color: linear-gradient(to bottom, #4c0a87, #7e22ce);
+}
+
+
+/* ================================
+   ÍCONES NOS BOTÕES
+   (segue seu modelo 2 NORMALMENTE)
+================================ */
+.button .image-view {
+    -fx-opacity: 0.9;
+}
+
+.button:hover .image-view {
+    -fx-opacity: 1.0;
+}
+
+/* ================================
+   HBOX DOS BOTÕES
+================================ */
+.hbox {
+    -fx-alignment: center;
+    -fx-spacing: 15px;
+}
+
+/* ================================
+   IMAGEM INICIAL (CÍRCULO)
+================================ */
+#img_inicial {
+    -fx-effect: dropshadow(gaussian, rgba(6,182,212,0.40), 20, 0.3, 0, 0);
+    -fx-border-color: #06b6d4;
+    -fx-border-width: 5px;
+    -fx-border-radius: 100%;
+}

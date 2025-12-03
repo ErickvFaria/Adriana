@@ -1,0 +1,104 @@
+/* ================================
+   FUNDO GERAL
+================================ */
+.root, .anchor-pane, .stack-pane, .vbox, .scroll-pane {
+    -fx-background-color: #f3e8ff; /* fundo roxo pastel */
+}
+
+/* ================================
+   TÍTULO PRINCIPAL
+================================ */
+.titulo {
+    -fx-text-fill: #7e22ce;        /* roxo forte */
+    -fx-font-size: 36px;
+    -fx-font-weight: bold;
+}
+
+/* ================================
+   LABELS DOS CAMPOS
+================================ */
+.label, .label-campos {
+    -fx-text-fill: #7e22ce;        /* roxo forte */
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+/* ================================
+   CAMPOS DE TEXTO E COMBOBOX
+================================ */
+.text-field, .combo-box, .combo-box-base {
+    -fx-background-color: white;
+    -fx-text-fill: #3b0764; /* roxo escuro */
+    -fx-border-color: #06b6d4; /* ciano */
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+    -fx-padding: 6 10;
+    -fx-font-weight: bold;
+}
+
+.text-field:focused, .combo-box:focused {
+    -fx-border-color: #7e22ce; /* roxo */
+    -fx-effect: dropshadow(gaussian, rgba(126,34,206,0.35), 8, 0.3, 0, 2);
+}
+
+/* ================================
+   BOTÕES (principal)
+================================ */
+.button {
+    -fx-background-color: linear-gradient(to bottom, #7e22ce, #3b0764);
+    -fx-text-fill: white;
+    -fx-padding: 8 20;
+    -fx-background-radius: 8;
+    -fx-border-color: #06b6d4;
+    -fx-border-width: 2;
+    -fx-border-radius: 8;
+    -fx-cursor: hand;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(6, 182, 212, 0.4), 8, 0.3, 0, 2);
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(to bottom, #9d4edd, #4c0a87);
+}
+
+.button:pressed {
+    -fx-background-color: linear-gradient(to bottom, #4c0a87, #7e22ce);
+}
+
+/* ================================
+   BOTÃO SECUNDÁRIO (Cancelar)
+================================ */
+.button-secondary {
+    -fx-background-color: white;
+    -fx-text-fill: #7e22ce;
+    -fx-border-color: #06b6d4;
+    -fx-border-width: 2;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-font-weight: bold;
+}
+
+.button-secondary:hover {
+    -fx-background-color: #e9d5ff;
+}
+
+.button-secondary:pressed {
+    -fx-background-color: #d8b4fe;
+}
+
+/* ================================
+   FOTO DE PERFIL (moldura)
+================================ */
+.profile-frame {
+    -fx-padding: 10;
+    -fx-background-radius: 120;
+    -fx-border-radius: 120;
+    -fx-border-color: #06b6d4;
+    -fx-border-width: 4px;
+    -fx-effect: dropshadow(gaussian, rgba(6,182,212,0.3), 20, 0.3, 0, 0);
+}
+
+.profile-Image {
+    -fx-background-radius: 120;
+    -fx-clip-shape: circle;
+}
